@@ -4,12 +4,12 @@
   "description": "A simple Peer-to-Peer video chat application",
   "main": "server.js",
   "engines": {
-      "node": "6.9.4",
-      "npm": "3.10.10"
-    },
-    "scripts": {
-      "start": "node server.js"
-    },
+    "node": "6.9.4",
+    "npm": "3.10.10"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/prit2596/Video-Chat-Application.git"
@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/prit2596/Video-Chat-Application/issues"
   },
-  "homepage": "https://github.com/prit2596/Video-Chat-Application#readme"
+  "homepage": "https://github.com/prit2596/Video-Chat-Application#readme",
+  "dependencies": {
+    "cors": "^2.8.3",
+    "detectrtc": "^1.3.4",
+    "express": "^4.15.2",
+    "morgan": "^1.8.1",
+    "webrtcsupport": "^2.2.0"
+  }
 }
