@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>p2p file transfer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  </head>
+  <script src="/p2p/main11.js" charset="utf-8"></script>
+  <body>
+<div class="container" style="padding-top:25px">
+  <form class="form-inline">
+
+    <div class="col-md-3 col-md-offset-3">
+      <label for="SRC">Source</label>
+      <input type="text" id="src" name="dst" class="input-md form-control" value="">
+
+    </div>
+    <div class="col-md-5">
+      <label for="DST">Destination</label>
+      <input type="text" id="dst" name="dst" class="input-md form-control" value="">
+
+    </div>
+  <br>
+  <br>
+  <br>
+  <div class="col-md-8 col-md-offset-2">
+        <input type="button" class="btn btn-block btn-primary" name="" value="connect" onclick="connect();">
+  </div>
+  </form>
+  <br>
+  <br>
+  <div class="row">
+
+        <p id="connectionInfo"></p>
+      <div class="col-md-6">
+        <label for="Sent">Sent</label>
+        <textarea name="s" id="s" rows="8" cols="30" class="form-control"></textarea>
+
+      </div>
+
+      <div class="col-md-6">
+        <label for="Received">Received</label>
+        <textarea name="r" id="r" rows="8" cols="30" class="form-control"></textarea>
+
+      </div>
+
+  </div>
+  <br>
+  <div class="row">
+
+    <div class="col-md-6 col-md-offset-3">
+
+      <input type="button" name="" class="btn btn-warning btn-block" value="send" onclick="send();">
+
+    </div>
+
+
+  </div>
+  <br>
+  <div class="row">
+
+    <div class="col-md-6 col-md-offset-3">
+
+      <input type="button" class="btn btn-success btn-block" name="" value="call" onclick="call();">
+
+    </div>
+</div>
+<br>
+<br>
+  <div class="row">
+
+      <div class="col-md-6">
+        <video id="other" autoplay>
+        </video>
+      </div>
+      <div class="col-md-3 col-md-offset-1">
+        <video id="my" autoplay width="300" height="300">
+        </video>
+      </div>
+
+  </div>
+
+
+
+</div>
+  </body>
+</html>

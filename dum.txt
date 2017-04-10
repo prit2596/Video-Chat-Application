@@ -1,0 +1,12 @@
+/*function listenStream()
+{
+peer.on('stream',function(stream)
+{
+  console.log('inside listen stream');
+  var video = document.querySelector('video');
+  video.srcObject = stream;
+  video.onloadedmetadata = function(e) {
+    video.play();
+  }
+});
+}*/
