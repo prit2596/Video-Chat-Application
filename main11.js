@@ -1,4 +1,3 @@
-//console.log('123');
 var  peer = new Peer({key:'b9fchctm0r16pqfr',config:
                                                   {'iceServers':
                                                                 [{ url: 'stun:stun.l.google.com:19302' },
