@@ -7,7 +7,7 @@ var DetectRTC = require('detectrtc');
 var cors = require('cors');
 var ExpressPeerServer = require('peer').ExpressPeerServer;
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 9000;
 
 app.use(cors());
 app.use(morgan('dev'));
@@ -34,7 +34,7 @@ app.use('/peerjs',ExpressPeerServer(server,option));
     }
 
 });*/
-server.listen(9000);
+//server.listen(9000);
 app.listen(port, function(){
     console.log('Server running at port ' + port);
 });
