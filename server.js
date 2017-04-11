@@ -7,7 +7,7 @@ var DetectRTC = require('detectrtc');
 var cors = require('cors');
 var ExpressPeerServer = require('peer').ExpressPeerServer;
 
-var port = process.env.PORT || 9000;
+var port = process.env.PORT || 443;
 
 app.use(cors());
 app.use(morgan('dev'));
