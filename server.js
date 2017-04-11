@@ -5,6 +5,7 @@ var morgan = require('morgan');
 var webrtcSupport = require('webrtcsupport');
 var DetectRTC = require('detectrtc');
 var cors = require('cors');
+var ExpressPeerServer = require('peer').ExpressPeerServer;
 
 var port = process.env.PORT || 3000;
 
@@ -12,9 +13,16 @@ app.use(cors());
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/'));
 
-app.get('*', function(req,res){
+app.get('/', function(req,res){
     res.sendFile(path.join(__dirname + '/index.html'));
 });
+
+var server = require('http').createServer(app);
+var option={
+    debug:true
+}
+
+app.use('/peerjs',ExpressPeerServer(server,option));
 
 
 /*DetectRTC.load(function() {
@@ -26,7 +34,7 @@ app.get('*', function(req,res){
     }
 
 });*/
-
-app.listen(port, function(){
+server.listen(9000);
+//app.listen(port, function(){
     console.log('Server running at port ' + port);
-});
+//});
