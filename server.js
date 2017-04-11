@@ -35,6 +35,6 @@ app.use('/peerjs',ExpressPeerServer(server,option));
 
 });*/
 server.listen(9000);
-//app.listen(port, function(){
+app.listen(port, function(){
     console.log('Server running at port ' + port);
-//});
+});
