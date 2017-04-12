@@ -1,4 +1,4 @@
-var  peer = new Peer({key:'b9fchctm0r16pqfr',config:
+var  peer = new Peer({key:'b9fchctm0r16pqfr',port: 9000,path: '/peerjs',debug: 3,config:
                                                   {'iceServers':
                                                                 [{ url: 'stun:stun.l.google.com:19302' },
                                                                  { 	url: 'turn:192.158.29.39:3478?transport=udp',
